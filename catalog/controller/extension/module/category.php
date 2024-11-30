@@ -51,6 +51,9 @@ class ControllerExtensionModuleCategory extends Controller {
 				'filter_sub_category' => true
 			);
 
+
+			// add 
+
 			$data['categories'][] = array(
 				'category_id' => $category['category_id'],
 				'name'        => $category['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
